@@ -3,11 +3,7 @@
     ViewBag.Title = "Income";
     Layout = "~/Views/Shared/_Layout.cshtml";
 
-    var rest = 50;
-    var salary = 1200;
-    var otherJob = 220;
-    var otherIncome = 0;
-    var totalIncome = rest + salary + otherJob + otherIncome;
+
 
 }
 
@@ -20,7 +16,7 @@
 </head>
 <body>
     <div>
-        <h1>Your total income is @totalIncome;
+        <h1>Your total income is @ViewBag.TotalIncome; </h1>
     </div>
 </body>
 </html>
