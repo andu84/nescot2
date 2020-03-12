@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
 {
     public class NexcoController: Controller
     {
-        public ActionResult Detail()
+        public ActionResult Income()
         {
             return View(); 
         }
