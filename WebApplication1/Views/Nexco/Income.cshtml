@@ -1,23 +1,16 @@
 ﻿
 @{
-    ViewBag.Title = "Income";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+Layout = "~/Views/Shared/_Layout.cshtml";
+ViewBag.Title = "Income";
 
 
 
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-        <h1>Your total income is @ViewBag.TotalIncome; </h1>
-    </div>
-</body>
-</html>
+<div class="h1">
+    <h1>Your total income on @DateTime.Now.DayOfWeek @DateTime.Now.ToShortDateString()  is @ViewBag.TotalIncome; </h1>
+</div>
+
 

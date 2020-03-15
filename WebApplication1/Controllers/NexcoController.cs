@@ -10,6 +10,8 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Income()
         {
+            ViewBag.Title = "Income";
+            ViewBag.Details = "Detail here";
             ViewBag.InteresRate= 50;
             ViewBag.Salary = 1200;
             ViewBag.OtherJob = 220;
