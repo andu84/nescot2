@@ -3,21 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
     public class NexcoController: Controller
     {
+        
         public ActionResult Income()
         {
-            ViewBag.Title = "Income";
-            ViewBag.Details = "Detail here";
-            ViewBag.InteresRate= 50;
-            ViewBag.Salary = 1200;
-            ViewBag.OtherJob = 220;
-            ViewBag.OtherIncome = 0;
-            ViewBag.TotalIncome = ViewBag.InteresRate + ViewBag.Salary + ViewBag.OtherJob + ViewBag.OtherIncome;
-            return View(); 
+            var income = new Income()
+            {
+                Details = "Details here",
+                InteresRate = 50,
+                Salary = 1200,
+                OtherJob = 220,
+                OtherIncome = 0,
+          
+            };
+           
+            return View(income); 
         }
 
     }

@@ -13,7 +13,14 @@ namespace WebApplication1.Models
         public int Salary { get; set; }
         public int OtherJob { get; set; }
         public int OtherIncome { get; set; }
-        public int TotalIncome { get; set; }
+
+        public int TotalIncome { 
+            get
+            {
+                return InteresRate + Salary + OtherJob + OtherIncome;
+            }
+        }
+        
 
     }
 }

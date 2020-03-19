@@ -1,4 +1,5 @@
 ﻿
+@model WebApplication1.Models.Income
 @{
     
 Layout = "~/Views/Shared/_Layout.cshtml";
@@ -10,7 +11,7 @@ ViewBag.Title = "Income";
 
 
 <div class="h1">
-    <h1>Your total income on @DateTime.Now.DayOfWeek @DateTime.Now.ToShortDateString()  is @ViewBag.TotalIncome; </h1>
+    <h1>Your total income on @DateTime.Now.DayOfWeek @DateTime.Now.ToShortDateString()  is @Model.TotalIncome; </h1>
 </div>
 
 
