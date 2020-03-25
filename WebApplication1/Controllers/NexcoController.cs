@@ -3,24 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.Data;
 using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
     public class NexcoController: Controller
     {
-        
-        public ActionResult Income()
+
+        private IncomeRepository _incomeRepository = null;
+        public NexcoController()
         {
-            var income = new Income()
+            _incomeRepository = new IncomeRepository();
+        }
+        public ActionResult Income(int? id)
+        {
+            if (id == null)
             {
-                Details = "Details here",
-                InteresRate = 50,
-                Salary = 1200,
-                OtherJob = 220,
-                OtherIncome = 0,
-          
-            };
+                return HttpNotFound();
+            }
+            var income = _incomeRepository.GetIncome((int)id);
            
             return View(income); 
         }

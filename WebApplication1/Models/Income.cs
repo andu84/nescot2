@@ -20,6 +20,7 @@ namespace WebApplication1.Models
                 return InteresRate + Salary + OtherJob + OtherIncome;
             }
         }
+      
         
 
     }

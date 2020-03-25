@@ -12,7 +12,8 @@ namespace WebApplication1.Data
         private static Income[] _income = new Income[]
     {
         new Income()
-            {
+            {  
+                Id=1,
                 Details = "Budget1",
                 InteresRate = 50,
                 Salary = 8200,
@@ -20,7 +21,7 @@ namespace WebApplication1.Data
                 OtherIncome = 230,
             },
         new Income()
-            {
+            {   Id=2,
                 Details = "Budget2",
                 InteresRate = 50,
                 Salary = 1200,
@@ -28,7 +29,8 @@ namespace WebApplication1.Data
                 OtherIncome = 450,
             },
         new Income()
-            {
+            {   
+                Id=3,
                 Details = "Budget3",
                 InteresRate = 250,
                 Salary = 1700,
